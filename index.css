@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Smythe', cursive;
+    background: #F5F5F5;
+
+} 
+
+*{
+    box-sizing: border-box;
+}
+/* Typography */
+
+h1{
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+p{
+    margin: .6em 0;
+}
+
+/* Layout */
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 470px;
+}
+
+/* Header */
+header{
+    color:  #FFFFFF;
+    background-color: grey;
+    padding: 2.5em 0;
+    background-image: url('images/hero.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Main */
+main{
+    padding: 2em 0;
+}
+
+/* Food section */
+.food-category p{
+    color: #8B8B8B;
+}
+
+.food-emoji{
+    font-size: 5rem;
+    margin-right: .2em;
+}
+
+.food-item{
+    padding: 1.5em 0;
+    border-bottom: 1px solid #BBBBBB; 
+  
+  }
+  
+.food-item-container{
+      display: flex;
+}
+
+
+
+/* Order section */
+.orders>h3{
+    text-align: center;
+    padding: 1.5em 0 1em 0;
+}
+
+.order-items h3{
+    display: inline-block;
+}
+
+.order-item p{
+    margin: 0;
+    display: inline-block;
+    margin-left: 1em;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 1.2rem
+    
+}
+
+.order-item{
+    margin: .8em 0;
+}
+
+
+/* Food and order mixins */
+.food-item,.order-item{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Thank you message */
+#thankyou-dialog{
+    margin: 2em 0;
+    font-size: 2rem;
+    color: #065F46;
+    text-align: center;
+    background: #ECFDF5;
+    padding: .3em;
+}
+
+/* buttons */
+
+button{
+    border: none; 
+    cursor: pointer; 
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    background: #16DB99;
+    color: #FFFFFF;
+    padding: 1em;
+    margin: 2em 0;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+
+.remove-btn{
+    background: inherit;
+    border: none;
+    font-size: .8rem;
+    color:  #BBBBBB;
+      
+}
+    
+.remove-btn:hover,.remove-btn:focus{
+    color:  #F43F5E;
+}
+
+
+.add-btn{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    color: inherit;
+    background: inherit;
+    border: 1.5px solid #DEDEDE;
+    font-size: 1rem;
+    
+}
+.add-btn:hover,.add-btn:active{
+    background: #6EE7B7;
+    color: #ffff;
+}
+
+.add-btn:focus{
+    outline: 2px solid #6EE7B7; 
+}
+
+/* Form Modal */
+
+input[type="text"]{
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+#payment-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 470px;
+    width: 80%;
+    height: fit-content;
+    background: inherit;
+    padding: 2em;
+    margin: auto;
+    box-shadow: black 0 0 5em;
+    opacity: 1;
+}
+
+.hidden{
+    display: none;
+}
+
+
+#dark-theme-Btn{
+    margin: 1.5em;
+    height: 2em;
+    width: 2em;
+    background: #F59E0B;
+
+    position: absolute;
+    right:  0;
+    top: 0;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid #8B8B8B; 
+    z-index:100;
+    opacity: .5; 
+    
+    
+}
+
+#dark-theme-Btn:hover{
+    opacity: 1;
+}
+
+.dark-theme{
+    color:  whitesmoke;
+   
+    background-color: #11001c;
+}

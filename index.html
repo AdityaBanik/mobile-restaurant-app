@@ -1,0 +1,60 @@
+<html>
+    <head>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- hero section -->
+        <header>
+            <div class="container">
+                <h1>Jimmy’s Diner</h1>
+                <p class="subtitle">The best burgers and pizzas in town.</p>
+            </div>
+            <button id="dark-theme-Btn"><i class="fa-sharp fa-solid fa-moon"></i></button>
+        </header>
+        
+        <main>
+            <div class="container">
+                
+                <!-- Food category section-->
+                <section class="food-category"></section>
+                
+                <!-- Orders Section -->
+                <section class="orders hidden" id="order-section">
+                    <h3>Your order</h3>
+                  
+                    <div class="order-items"></div>
+                    <hr>
+                    <div class="order-item">
+                        <h3>Total price:</h3>
+                        <h3 id="total-price">21$</h3>
+                    </div>
+                    <button class="btn" id="complete-order">Complete order</button>
+                </section>
+                
+                <!-- Thank you Message -->
+                <div id="thankyou-dialog" class="hidden">
+                    <p>Thanks, James! Your order is on its way!</p>
+                </div>
+            </div>
+        </main>
+        
+    
+	    <script src="index.js" type="module"></script>
+    </body>
+    
+    <div class="hidden" id="payment-modal">
+        <form id="form1">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter card number" required>
+            <input type="text" placeholder="Enter CVV" required>
+            <button type="submit" class="btn">Complete order</button>
+        </form>   
+    </div>
+</html>
+
